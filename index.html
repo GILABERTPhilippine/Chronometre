@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chronométre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div class="container" id="chronometre">
+        <div class="jumbotron" id="time">
+            <h1>Chronométre</h1>
+            <div class="panel panel-default">
+                <div class="panel-body" id="nombre"></div>
+                <span>0 h :</span>
+                <span>0 min :</span>
+                <span>0 s :</span>
+                <span>0 ms</span>
+            </div>
+            <br>
+            <button type="button" id="start" class="btn btn-success" onclick="start()">Start</button>
+            <button type="button" id="stop" class="btn btn-danger" onclick="stop()">Stop</button>
+            <button type="button" id="reset" class="btn btn-default" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
