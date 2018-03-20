@@ -11,7 +11,6 @@ var h = 0;
 var m = 0;
 var s = 0;
 var time;
-// var bo = true;
 
 // Je charge ma page avec le $(document).ready
 $(document).ready(function () {
@@ -19,22 +18,23 @@ $(document).ready(function () {
     // setInterval déclenche des actions après un intervalle de temps donné, ou de la répéter après un intervalle de temps.
     $("#start").click(function () {
         time = setInterval(function () {
+            $("#s").html(s);
+            $("#m").html(m);
+            $("#h").html(h);
             s++;
-
-            if (s > 59) {
+            console.log("seconde:", s);
+            if (s > 58) {
                 m++;
                 s = 0;
+
+                console.log("minute:", m);
             }
-            if (m > 59) {
+            if (m > 58) {
                 h++;
                 m = 0;
             }
-
-            $("#s").html();
-            $("#m").html();
-            $("#h").html();
         }, 1000);
-        // bo = true;
+
     });
 
     $("#stop").click(function () {
@@ -45,9 +45,6 @@ $(document).ready(function () {
         $("#s").html();
         $("#m").html();
         $("#h").html();
-
-        // Affecter true a bo pour indiquer qu'il n'y a plus d'Intervalle actif
-        // bo = true;
     });
 
     $("#reset").click(function () {
@@ -59,12 +56,6 @@ $(document).ready(function () {
         $("#s").html("0 s");
         $("#m").html("0 min :");
         $("#h").html("0 h :");
-
-        // if (bo == false) {
-        //     clearInterval(temps);
-        // }
-
-        // bo = true;
 
     });
 });
