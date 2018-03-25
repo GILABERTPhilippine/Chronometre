@@ -53,9 +53,9 @@ $(document).ready(function () {
         m = 0;
         h = 0;
 
-        $("#s").html("0 s");
-        $("#m").html("0 min :");
-        $("#h").html("0 h :");
+        $("#s").html("0");
+        $("#m").html("0");
+        $("#h").html("0");
 
     });
 });

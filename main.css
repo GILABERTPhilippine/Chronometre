@@ -25,3 +25,9 @@ span {
 #reset {
     float: right;
 }
+
+.panel.panel-default {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
