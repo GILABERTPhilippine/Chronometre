@@ -20,7 +20,7 @@ $(document).ready(function () {
     // la méthode setInterval () exécutera la fonction une fois toutes les 1 seconde, comme une montre numérique
     $("#start").click(function () {
         time = setInterval(function () {
-            // On affiche les variable dans la div dans le html
+            // On affiche les variables dans la div dans le html
             $("#s").html(s);
             $("#m").html(m);
             $("#h").html(h);
@@ -52,7 +52,7 @@ $(document).ready(function () {
         m = 0;
         h = 0;
 
-        // On affiche les variable dans les conteneur dédié
+        // On affiche les variables dans la div dans le html
         $("#s").html("0");
         $("#m").html("0");
         $("#h").html("0");
