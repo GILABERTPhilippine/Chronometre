@@ -18,6 +18,7 @@ $(document).ready(function () {
     // setInterval déclenche des actions après un intervalle de temps donné, ou de la répéter après un intervalle de temps.
     $("#start").click(function () {
         time = setInterval(function () {
+            // On affiche les variable dans les conteneur dédié
             $("#s").html(s);
             $("#m").html(m);
             $("#h").html(h);
@@ -39,12 +40,8 @@ $(document).ready(function () {
 
     $("#stop").click(function () {
 
-        clearInterval(time); // On stop l'intervalle lancer
+        clearInterval(time); //clearInterval stoppe l'action de setInterval
 
-        // On affiche les variable dans les conteneur dédié
-        $("#s").html();
-        $("#m").html();
-        $("#h").html();
     });
 
     $("#reset").click(function () {
@@ -53,6 +50,7 @@ $(document).ready(function () {
         m = 0;
         h = 0;
 
+        // On affiche les variable dans les conteneur dédié
         $("#s").html("0");
         $("#m").html("0");
         $("#h").html("0");
